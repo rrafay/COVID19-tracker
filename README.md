@@ -8,3 +8,9 @@ Some modifications that can be made:
 `y = data['cases']` to `y = data['deaths']` 
 and 
 `DF['cases'] = y` to `DF['deaths'] = y`  
+
+
+### Example Plot
+COVID-19 Cases for Massachusetts:
+
+![Mass](https://github.com/rrafay/COVID19-tracker/blob/master/plot.png)
