@@ -3,8 +3,8 @@ A script that visualizes the number of COVID-19 cases in a specified state (Mass
 
 ## Modifications
 Some modifications that can be made: 
--You can change the state for which you'd like to see the daily cases for: just enter the name of a state you'd like to see the cases for. For example to see cases for California:  `data = data[data['state'] == 'California']`
--You can also see the daily death rate by modifying:
+- You can change the state for which you'd like to see the daily cases for: just enter the name of a state you'd like to see the cases for. For example to see cases for California:  `data = data[data['state'] == 'California']`
+- You can also see the daily death rate by modifying:
 `y = data['cases']` to `y = data['deaths']` 
 and 
 `DF['cases'] = y` to `DF['deaths'] = y`  
