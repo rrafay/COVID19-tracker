@@ -14,3 +14,18 @@ and
 COVID-19 Cases for Massachusetts:
 
 ![Mass](https://github.com/rrafay/COVID19-tracker/blob/master/plot.png)
+
+### Run executable file on your machine:
+To run the python script on your local machine, clone the repo and run the script.py file by typing this in the terminal:
+```
+python -i script.py
+
+```
+This will output an interactive python graph.
+
+To stop the script simply type
+```
+exit()
+
+```
+in the terminal.
