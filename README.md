@@ -9,20 +9,31 @@ data = data[data['state'] == 'California']
 ```
 - You can also see the daily death rate by modifying:
 ```
-y = data['cases']` to `y = data['deaths']
+y = data['cases']  
 ``` 
+to 
+```
+y = data['deaths']
+
+```
+
 and 
 ```
-DF['cases'] = y` to `DF['deaths'] = y
-```  
+DF['cases'] = y 
 
+```  
+to
+```
+DF['deaths'] = y
+
+```
 
 ### Example Plot
 COVID-19 Cases for Massachusetts:
 
 ![Mass](https://github.com/rrafay/COVID19-tracker/blob/master/plot.png)
 
-### Run executable file on your machine:
+### Run an executable file on your machine:
 To run the python script on your local machine, clone the repo and run the script.py file by typing this in the terminal:
 ```
 python -i script.py
