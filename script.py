@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+import matplotlib
+matplotlib.use("TkAgg")
 # -*- coding: utf-8 -*-
 """corona2.ipynb
 
@@ -33,7 +36,7 @@ fig.subplots_adjust(bottom=0.1)
 plt.xticks(rotation=90)
 plt.figure(figsize=(25,10))
 plt.plot(DF)
-
+plt.show()
 #plt.plot(x,y)
 #fig = plt.figure(figsize=(20,10))
 #ax = fig.add_subplot(111)
