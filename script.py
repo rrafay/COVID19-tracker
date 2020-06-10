@@ -14,19 +14,31 @@ import pandas as pd
 import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
+import argparse
+
+##Add Parses section
+parser = argparse.ArgumentParser()
+
+parser.add_argument("-state", "--statename", dest = "statename", default = "xyz.edu", help="State name")
+parser.add_argument("-y-axis", "--y_axis", dest = "y_axis", default = "xyz.edu", help="Case Type")
+args= parser.parse_args()
+
+
+
+
 
 url = 'https://github.com/nytimes/covid-19-data/raw/master/us-states.csv'
 
 data = pd.read_csv(url)
-data = data[data['state'] == 'Massachusetts']
+data = data[data['state'] == args.statename]
 data
 
 dates = data['date']
 x = pd.to_datetime(dates)
-y = data['cases']
+y = data[args.y_axis]
 
 DF = pd.DataFrame()
-DF['cases'] = y
+DF[args.y_axis] = y
 DF = DF.set_index(x)
 
 fig, ax = plt.subplots()
